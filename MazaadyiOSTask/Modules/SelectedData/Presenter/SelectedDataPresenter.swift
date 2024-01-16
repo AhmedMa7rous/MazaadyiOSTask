@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class SelectedDataPresenter {
+    var selectedData: [String : String] = [:]
+    
+    func getKeys() -> [String] {
+        Array(selectedData.keys)
+    }
+    
+    func getValues() -> [String] {
+        Array(selectedData.values)
+    }
+}

@@ -9,6 +9,11 @@ import UIKit
 
 class SelectedDataTableViewCell: UITableViewCell {
 
+    //MARK: - Outlet Connections
+    @IBOutlet weak var selectedKeyLabel: UILabel!
+    @IBOutlet weak var selectedValueLabel: UILabel!
+    
+    //MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,6 +23,12 @@ class SelectedDataTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    //MARK: - Support Functions
+    func configure(with key: String, and value: String) {
+        selectedKeyLabel.text = key
+        selectedValueLabel.text = value
     }
     
 }

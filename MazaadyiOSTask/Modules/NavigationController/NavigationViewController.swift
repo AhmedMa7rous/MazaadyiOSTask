@@ -9,21 +9,23 @@ import UIKit
 
 class NavigationViewController: UINavigationController {
 
+    //MARK: Properties
+    
+    
+/*======================================================*/
+    //MARK: LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        //updateUi()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+/*======================================================*/
+    //MARK: - Support Functions
+    
+//    ///This function responsible for every thing related with UI
+//    ///This is a support function to set up navigation bar UI
+//    private func updateUi() {
+//        navigationController?.navigationBar.isHidden = true
+//    }
 }

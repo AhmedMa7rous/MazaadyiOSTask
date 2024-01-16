@@ -1,22 +1,198 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormViewController" customModule="MazaadyiOSTask" customModuleProvider="target">
             <connections>
+                <outlet property="brandDropDown" destination="OVl-c3-Ayb" id="xF4-Ly-cRV"/>
+                <outlet property="categoriesDropDown" destination="d7n-gj-4pH" id="YkR-AQ-T5j"/>
+                <outlet property="formStackView" destination="L1T-VW-Cgk" id="OXC-UH-zSF"/>
+                <outlet property="modelDropDown" destination="142-LI-pdn" id="MaF-Ae-TgN"/>
+                <outlet property="processTypeDropDown" destination="83A-Fn-wQ0" id="7ob-Zd-Y2Q"/>
+                <outlet property="subCategoryDropDown" destination="WTa-kG-PVj" id="AzF-ja-PjO"/>
+                <outlet property="submitButton" destination="iVy-Zx-50y" id="lKY-w0-W9H"/>
+                <outlet property="transmissionDropDown" destination="LKC-Fn-zCP" id="ALs-DA-bRd"/>
+                <outlet property="typeDropDown" destination="AG4-yN-f7g" id="R03-P1-Bzm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="DropDowns" destination="WTa-kG-PVj" collectionClass="NSMutableArray" id="NCe-6F-RC1"/>
+                <outletCollection property="DropDowns" destination="83A-Fn-wQ0" collectionClass="NSMutableArray" id="odM-gT-hWg"/>
+                <outletCollection property="DropDowns" destination="OVl-c3-Ayb" collectionClass="NSMutableArray" id="mwn-P0-7HS"/>
+                <outletCollection property="DropDowns" destination="142-LI-pdn" collectionClass="NSMutableArray" id="8aw-Iw-56v"/>
+                <outletCollection property="DropDowns" destination="AG4-yN-f7g" collectionClass="NSMutableArray" id="ans-al-cQR"/>
+                <outletCollection property="DropDowns" destination="LKC-Fn-zCP" collectionClass="NSMutableArray" id="ByB-Fv-RFc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuf-F2-f3z">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TzD-O7-doh" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L1T-VW-Cgk">
+                                    <rect key="frame" x="30" y="247" width="333" height="358"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d7n-gj-4pH" customClass="LabeledDropDown" customModule="MazaadyiOSTask" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="34"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="Category"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="arrowColor">
+                                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
+                                                    <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Category"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WTa-kG-PVj" customClass="LabeledDropDown" customModule="MazaadyiOSTask" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="54" width="333" height="34"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="Subcategory"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Subcategory"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83A-Fn-wQ0" customClass="LabeledDropDown" customModule="MazaadyiOSTask" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="108" width="333" height="34"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="Process Type"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Process Type"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVl-c3-Ayb" customClass="LabeledDropDown" customModule="MazaadyiOSTask" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="162" width="333" height="34"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="Brand"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Brand"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="142-LI-pdn" customClass="LabeledDropDown" customModule="MazaadyiOSTask" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="216" width="333" height="34"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="Model"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Model"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AG4-yN-f7g" customClass="LabeledDropDown" customModule="MazaadyiOSTask" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="270" width="333" height="34"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="Type"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Type"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LKC-Fn-zCP" customClass="LabeledDropDown" customModule="MazaadyiOSTask" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="324" width="333" height="34"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="Transmission Type"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Transmission Type"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
+                                                    <real key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVy-Zx-50y">
+                                    <rect key="frame" x="30" y="635" width="333" height="38"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="Submit"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="submitButtonTapped:" destination="-1" eventType="touchUpInside" id="8Ko-u7-Sqa"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="iVy-Zx-50y" secondAttribute="trailing" constant="30" id="25n-Eo-dRd"/>
+                                <constraint firstItem="iVy-Zx-50y" firstAttribute="top" secondItem="L1T-VW-Cgk" secondAttribute="bottom" constant="30" id="27c-QI-JRc"/>
+                                <constraint firstItem="L1T-VW-Cgk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="TzD-O7-doh" secondAttribute="top" constant="60" id="HLt-UU-0Eo"/>
+                                <constraint firstItem="iVy-Zx-50y" firstAttribute="leading" secondItem="TzD-O7-doh" secondAttribute="leading" constant="30" id="T9K-Fy-4UK"/>
+                                <constraint firstAttribute="trailing" secondItem="L1T-VW-Cgk" secondAttribute="trailing" constant="30" id="ZRb-GJ-2vR"/>
+                                <constraint firstItem="L1T-VW-Cgk" firstAttribute="centerY" secondItem="TzD-O7-doh" secondAttribute="centerY" id="awM-tN-KX8"/>
+                                <constraint firstItem="L1T-VW-Cgk" firstAttribute="leading" secondItem="TzD-O7-doh" secondAttribute="leading" constant="30" id="j3J-gV-RRs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="TzD-O7-doh" firstAttribute="top" secondItem="vuf-F2-f3z" secondAttribute="top" id="3iz-10-r79"/>
+                        <constraint firstAttribute="bottom" secondItem="TzD-O7-doh" secondAttribute="bottom" id="8XD-IJ-cSG"/>
+                        <constraint firstItem="TzD-O7-doh" firstAttribute="width" secondItem="vuf-F2-f3z" secondAttribute="width" id="FCE-rS-d7V"/>
+                        <constraint firstItem="TzD-O7-doh" firstAttribute="leading" secondItem="vuf-F2-f3z" secondAttribute="leading" id="bY3-Zj-3B0"/>
+                        <constraint firstAttribute="trailing" secondItem="TzD-O7-doh" secondAttribute="trailing" id="m7Q-EU-btu"/>
+                        <constraint firstItem="TzD-O7-doh" firstAttribute="height" secondItem="vuf-F2-f3z" secondAttribute="height" priority="250" id="xDl-nj-3lh"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="yZd-g7-ZJf"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="QBB-Cx-Tre"/>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vuf-F2-f3z" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="0T4-0D-clJ"/>
+                <constraint firstItem="vuf-F2-f3z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7e3-oe-vpb"/>
+                <constraint firstAttribute="trailing" secondItem="vuf-F2-f3z" secondAttribute="trailing" id="eON-tm-8OC"/>
+                <constraint firstItem="vuf-F2-f3z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="x2u-3X-I7C"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -9,13 +9,34 @@
 /* Begin PBXBuildFile section */
 		4B8E87572B512D4700ECB9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E87562B512D4700ECB9DC /* AppDelegate.swift */; };
 		4B8E87592B512D4700ECB9DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E87582B512D4700ECB9DC /* SceneDelegate.swift */; };
-		4B8E875B2B512D4700ECB9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E875A2B512D4700ECB9DC /* ViewController.swift */; };
-		4B8E875E2B512D4700ECB9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E875C2B512D4700ECB9DC /* Main.storyboard */; };
 		4B8E87602B512D4800ECB9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E875F2B512D4800ECB9DC /* Assets.xcassets */; };
 		4B8E87632B512D4800ECB9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E87612B512D4800ECB9DC /* LaunchScreen.storyboard */; };
-		4B8E876E2B512D4800ECB9DC /* MazaadyiOSTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E876D2B512D4800ECB9DC /* MazaadyiOSTaskTests.swift */; };
-		4B8E87782B512D4800ECB9DC /* MazaadyiOSTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E87772B512D4800ECB9DC /* MazaadyiOSTaskUITests.swift */; };
-		4B8E877A2B512D4800ECB9DC /* MazaadyiOSTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E87792B512D4800ECB9DC /* MazaadyiOSTaskUITestsLaunchTests.swift */; };
+		4B8E878E2B512EC000ECB9DC /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E878C2B512EC000ECB9DC /* FormViewController.swift */; };
+		4B8E878F2B512EC000ECB9DC /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E878D2B512EC000ECB9DC /* FormViewController.xib */; };
+		4B8E87932B51308600ECB9DC /* StaticScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E87912B51308600ECB9DC /* StaticScreenViewController.swift */; };
+		4B8E87942B51308600ECB9DC /* StaticScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E87922B51308600ECB9DC /* StaticScreenViewController.xib */; };
+		4B8E879B2B51337300ECB9DC /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E87992B51337300ECB9DC /* NavigationViewController.swift */; };
+		4B8E879C2B51337300ECB9DC /* NavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B8E879A2B51337300ECB9DC /* NavigationViewController.xib */; };
+		4B8E87A32B519A3600ECB9DC /* iOSDropDown in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8E87A22B519A3600ECB9DC /* iOSDropDown */; };
+		4B8E87A52B519FE800ECB9DC /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8E87A42B519FE800ECB9DC /* Categories.swift */; };
+		4BAAAD962B54A6B100AF8503 /* OnlineUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAAD942B54A6B100AF8503 /* OnlineUserCollectionViewCell.swift */; };
+		4BAAAD972B54A6B100AF8503 /* OnlineUserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BAAAD952B54A6B100AF8503 /* OnlineUserCollectionViewCell.xib */; };
+		4BAAAD992B54A8EE00AF8503 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAAD982B54A8EE00AF8503 /* User.swift */; };
+		4BBCC30A2B51DB4E007FF504 /* FormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC3092B51DB4E007FF504 /* FormPresenter.swift */; };
+		4BBCC30F2B51E0B7007FF504 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC30E2B51E0B7007FF504 /* APIError.swift */; };
+		4BBCC3112B51E0D0007FF504 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC3102B51E0D0007FF504 /* NetworkManager.swift */; };
+		4BBCC3152B5275DB007FF504 /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC3142B5275DB007FF504 /* Properties.swift */; };
+		4BBCC3172B529EB2007FF504 /* LabeledDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC3162B529EB2007FF504 /* LabeledDropDown.swift */; };
+		4BBCC3192B541DDC007FF504 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC3182B541DDC007FF504 /* Models.swift */; };
+		4BBCC31B2B5468BE007FF504 /* FormPresenterUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC31A2B5468BE007FF504 /* FormPresenterUnitTest.swift */; };
+		4BBCC31D2B5469D7007FF504 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBCC31C2B5469D7007FF504 /* MockNetworkManager.swift */; };
+		4BD344212B547DBB00C4485F /* FormViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3441F2B547BBB00C4485F /* FormViewControllerUITests.swift */; };
+		4BD344262B54855300C4485F /* SelectedDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD344242B54855300C4485F /* SelectedDataTableViewCell.swift */; };
+		4BD344272B54855300C4485F /* SelectedDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD344252B54855300C4485F /* SelectedDataTableViewCell.xib */; };
+		4BD3442C2B54882100C4485F /* SelectedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3442A2B54882100C4485F /* SelectedDataViewController.swift */; };
+		4BD3442D2B54882100C4485F /* SelectedDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BD3442B2B54882100C4485F /* SelectedDataViewController.xib */; };
+		4BD3442F2B548D5C00C4485F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD3442E2B548D5C00C4485F /* UIView+Extension.swift */; };
+		4BD344312B548DFC00C4485F /* SelectedDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD344302B548DFC00C4485F /* SelectedDataPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +60,36 @@
 		4B8E87532B512D4700ECB9DC /* MazaadyiOSTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazaadyiOSTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8E87562B512D4700ECB9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B8E87582B512D4700ECB9DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4B8E875A2B512D4700ECB9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4B8E875D2B512D4700ECB9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B8E875F2B512D4800ECB9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B8E87622B512D4800ECB9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B8E87642B512D4800ECB9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8E87692B512D4800ECB9DC /* MazaadyiOSTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazaadyiOSTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B8E876D2B512D4800ECB9DC /* MazaadyiOSTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazaadyiOSTaskTests.swift; sourceTree = "<group>"; };
 		4B8E87732B512D4800ECB9DC /* MazaadyiOSTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazaadyiOSTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B8E87772B512D4800ECB9DC /* MazaadyiOSTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazaadyiOSTaskUITests.swift; sourceTree = "<group>"; };
-		4B8E87792B512D4800ECB9DC /* MazaadyiOSTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazaadyiOSTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4B8E878C2B512EC000ECB9DC /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		4B8E878D2B512EC000ECB9DC /* FormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
+		4B8E87912B51308600ECB9DC /* StaticScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticScreenViewController.swift; sourceTree = "<group>"; };
+		4B8E87922B51308600ECB9DC /* StaticScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticScreenViewController.xib; sourceTree = "<group>"; };
+		4B8E87992B51337300ECB9DC /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		4B8E879A2B51337300ECB9DC /* NavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationViewController.xib; sourceTree = "<group>"; };
+		4B8E87A42B519FE800ECB9DC /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		4BAAAD942B54A6B100AF8503 /* OnlineUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		4BAAAD952B54A6B100AF8503 /* OnlineUserCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnlineUserCollectionViewCell.xib; sourceTree = "<group>"; };
+		4BAAAD982B54A8EE00AF8503 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4BBCC3092B51DB4E007FF504 /* FormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenter.swift; sourceTree = "<group>"; };
+		4BBCC30E2B51E0B7007FF504 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		4BBCC3102B51E0D0007FF504 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4BBCC3142B5275DB007FF504 /* Properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Properties.swift; sourceTree = "<group>"; };
+		4BBCC3162B529EB2007FF504 /* LabeledDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabeledDropDown.swift; sourceTree = "<group>"; };
+		4BBCC3182B541DDC007FF504 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4BBCC31A2B5468BE007FF504 /* FormPresenterUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormPresenterUnitTest.swift; sourceTree = "<group>"; };
+		4BBCC31C2B5469D7007FF504 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		4BD3441F2B547BBB00C4485F /* FormViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewControllerUITests.swift; sourceTree = "<group>"; };
+		4BD344242B54855300C4485F /* SelectedDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDataTableViewCell.swift; sourceTree = "<group>"; };
+		4BD344252B54855300C4485F /* SelectedDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedDataTableViewCell.xib; sourceTree = "<group>"; };
+		4BD3442A2B54882100C4485F /* SelectedDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDataViewController.swift; sourceTree = "<group>"; };
+		4BD3442B2B54882100C4485F /* SelectedDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedDataViewController.xib; sourceTree = "<group>"; };
+		4BD3442E2B548D5C00C4485F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4BD344302B548DFC00C4485F /* SelectedDataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedDataPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8E87A32B519A3600ECB9DC /* iOSDropDown in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +141,11 @@
 		4B8E87552B512D4700ECB9DC /* MazaadyiOSTask */ = {
 			isa = PBXGroup;
 			children = (
+				4B8E87892B512D8600ECB9DC /* Helpers */,
+				4BBCC30B2B51DE1E007FF504 /* Network */,
+				4B8E878A2B512D9900ECB9DC /* Modules */,
 				4B8E87562B512D4700ECB9DC /* AppDelegate.swift */,
 				4B8E87582B512D4700ECB9DC /* SceneDelegate.swift */,
-				4B8E875A2B512D4700ECB9DC /* ViewController.swift */,
-				4B8E875C2B512D4700ECB9DC /* Main.storyboard */,
 				4B8E875F2B512D4800ECB9DC /* Assets.xcassets */,
 				4B8E87612B512D4800ECB9DC /* LaunchScreen.storyboard */,
 				4B8E87642B512D4800ECB9DC /* Info.plist */,
@@ -113,7 +156,8 @@
 		4B8E876C2B512D4800ECB9DC /* MazaadyiOSTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B8E876D2B512D4800ECB9DC /* MazaadyiOSTaskTests.swift */,
+				4BBCC31A2B5468BE007FF504 /* FormPresenterUnitTest.swift */,
+				4BBCC31C2B5469D7007FF504 /* MockNetworkManager.swift */,
 			);
 			path = MazaadyiOSTaskTests;
 			sourceTree = "<group>";
@@ -121,10 +165,164 @@
 		4B8E87762B512D4800ECB9DC /* MazaadyiOSTaskUITests */ = {
 			isa = PBXGroup;
 			children = (
-				4B8E87772B512D4800ECB9DC /* MazaadyiOSTaskUITests.swift */,
-				4B8E87792B512D4800ECB9DC /* MazaadyiOSTaskUITestsLaunchTests.swift */,
+				4BD3441F2B547BBB00C4485F /* FormViewControllerUITests.swift */,
 			);
 			path = MazaadyiOSTaskUITests;
+			sourceTree = "<group>";
+		};
+		4B8E87862B512D6C00ECB9DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E878C2B512EC000ECB9DC /* FormViewController.swift */,
+				4B8E878D2B512EC000ECB9DC /* FormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B8E87872B512D7400ECB9DC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4BBCC3092B51DB4E007FF504 /* FormPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4B8E87882B512D7F00ECB9DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E87A42B519FE800ECB9DC /* Categories.swift */,
+				4BBCC3142B5275DB007FF504 /* Properties.swift */,
+				4BBCC3182B541DDC007FF504 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B8E87892B512D8600ECB9DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4BBCC30E2B51E0B7007FF504 /* APIError.swift */,
+				4BBCC3162B529EB2007FF504 /* LabeledDropDown.swift */,
+				4BD3442E2B548D5C00C4485F /* UIView+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4B8E878A2B512D9900ECB9DC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E87902B512F5F00ECB9DC /* StaticScreen */,
+				4BD344222B5484ED00C4485F /* SelectedData */,
+				4B8E878B2B512DA100ECB9DC /* Form */,
+				4B8E87982B51334700ECB9DC /* NavigationController */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4B8E878B2B512DA100ECB9DC /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E87882B512D7F00ECB9DC /* Model */,
+				4B8E87872B512D7400ECB9DC /* Presenter */,
+				4B8E87862B512D6C00ECB9DC /* View */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		4B8E87902B512F5F00ECB9DC /* StaticScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E87972B51310800ECB9DC /* Model */,
+				4B8E87962B5130FF00ECB9DC /* Presenter */,
+				4B8E87952B5130F100ECB9DC /* View */,
+			);
+			path = StaticScreen;
+			sourceTree = "<group>";
+		};
+		4B8E87952B5130F100ECB9DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BAAAD932B54A68100AF8503 /* Cells */,
+				4B8E87912B51308600ECB9DC /* StaticScreenViewController.swift */,
+				4B8E87922B51308600ECB9DC /* StaticScreenViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B8E87962B5130FF00ECB9DC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4B8E87972B51310800ECB9DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BAAAD982B54A8EE00AF8503 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B8E87982B51334700ECB9DC /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				4B8E87992B51337300ECB9DC /* NavigationViewController.swift */,
+				4B8E879A2B51337300ECB9DC /* NavigationViewController.xib */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		4BAAAD932B54A68100AF8503 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4BAAAD942B54A6B100AF8503 /* OnlineUserCollectionViewCell.swift */,
+				4BAAAD952B54A6B100AF8503 /* OnlineUserCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4BBCC30B2B51DE1E007FF504 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4BBCC3102B51E0D0007FF504 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4BD344222B5484ED00C4485F /* SelectedData */ = {
+			isa = PBXGroup;
+			children = (
+				4BD344292B54857800C4485F /* Presenter */,
+				4BD344282B54856400C4485F /* View */,
+			);
+			path = SelectedData;
+			sourceTree = "<group>";
+		};
+		4BD344232B54852300C4485F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4BD344242B54855300C4485F /* SelectedDataTableViewCell.swift */,
+				4BD344252B54855300C4485F /* SelectedDataTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4BD344282B54856400C4485F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BD344232B54852300C4485F /* Cell */,
+				4BD3442A2B54882100C4485F /* SelectedDataViewController.swift */,
+				4BD3442B2B54882100C4485F /* SelectedDataViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4BD344292B54857800C4485F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				4BD344302B548DFC00C4485F /* SelectedDataPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +341,9 @@
 			dependencies = (
 			);
 			name = MazaadyiOSTask;
+			packageProductDependencies = (
+				4B8E87A22B519A3600ECB9DC /* iOSDropDown */,
+			);
 			productName = MazaadyiOSTask;
 			productReference = 4B8E87532B512D4700ECB9DC /* MazaadyiOSTask.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +416,9 @@
 				Base,
 			);
 			mainGroup = 4B8E874A2B512D4700ECB9DC;
+			packageReferences = (
+				4B8E87A12B519A3600ECB9DC /* XCRemoteSwiftPackageReference "iOSDropDown" */,
+			);
 			productRefGroup = 4B8E87542B512D4700ECB9DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +435,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BAAAD972B54A6B100AF8503 /* OnlineUserCollectionViewCell.xib in Resources */,
 				4B8E87632B512D4800ECB9DC /* LaunchScreen.storyboard in Resources */,
+				4B8E878F2B512EC000ECB9DC /* FormViewController.xib in Resources */,
+				4BD3442D2B54882100C4485F /* SelectedDataViewController.xib in Resources */,
+				4B8E87942B51308600ECB9DC /* StaticScreenViewController.xib in Resources */,
+				4B8E879C2B51337300ECB9DC /* NavigationViewController.xib in Resources */,
+				4BD344272B54855300C4485F /* SelectedDataTableViewCell.xib in Resources */,
 				4B8E87602B512D4800ECB9DC /* Assets.xcassets in Resources */,
-				4B8E875E2B512D4700ECB9DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +467,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8E875B2B512D4700ECB9DC /* ViewController.swift in Sources */,
+				4BBCC3152B5275DB007FF504 /* Properties.swift in Sources */,
+				4BD344312B548DFC00C4485F /* SelectedDataPresenter.swift in Sources */,
+				4B8E87932B51308600ECB9DC /* StaticScreenViewController.swift in Sources */,
+				4BBCC3112B51E0D0007FF504 /* NetworkManager.swift in Sources */,
+				4BD3442F2B548D5C00C4485F /* UIView+Extension.swift in Sources */,
+				4BAAAD962B54A6B100AF8503 /* OnlineUserCollectionViewCell.swift in Sources */,
+				4BBCC3192B541DDC007FF504 /* Models.swift in Sources */,
+				4BD3442C2B54882100C4485F /* SelectedDataViewController.swift in Sources */,
+				4B8E878E2B512EC000ECB9DC /* FormViewController.swift in Sources */,
 				4B8E87572B512D4700ECB9DC /* AppDelegate.swift in Sources */,
+				4B8E879B2B51337300ECB9DC /* NavigationViewController.swift in Sources */,
+				4BBCC3172B529EB2007FF504 /* LabeledDropDown.swift in Sources */,
+				4BD344262B54855300C4485F /* SelectedDataTableViewCell.swift in Sources */,
+				4BBCC30A2B51DB4E007FF504 /* FormPresenter.swift in Sources */,
+				4BAAAD992B54A8EE00AF8503 /* User.swift in Sources */,
 				4B8E87592B512D4700ECB9DC /* SceneDelegate.swift in Sources */,
+				4B8E87A52B519FE800ECB9DC /* Categories.swift in Sources */,
+				4BBCC30F2B51E0B7007FF504 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +492,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8E876E2B512D4800ECB9DC /* MazaadyiOSTaskTests.swift in Sources */,
+				4BBCC31D2B5469D7007FF504 /* MockNetworkManager.swift in Sources */,
+				4BBCC31B2B5468BE007FF504 /* FormPresenterUnitTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B8E87782B512D4800ECB9DC /* MazaadyiOSTaskUITests.swift in Sources */,
-				4B8E877A2B512D4800ECB9DC /* MazaadyiOSTaskUITestsLaunchTests.swift in Sources */,
+				4BD344212B547DBB00C4485F /* FormViewControllerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +521,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4B8E875C2B512D4700ECB9DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B8E875D2B512D4700ECB9DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4B8E87612B512D4800ECB9DC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -368,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -447,7 +663,7 @@
 				INFOPLIST_FILE = MazaadyiOSTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +691,7 @@
 				INFOPLIST_FILE = MazaadyiOSTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -607,6 +823,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B8E87A12B519A3600ECB9DC /* XCRemoteSwiftPackageReference "iOSDropDown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jriosdev/iOSDropDown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B8E87A22B519A3600ECB9DC /* iOSDropDown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B8E87A12B519A3600ECB9DC /* XCRemoteSwiftPackageReference "iOSDropDown" */;
+			productName = iOSDropDown;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B8E874B2B512D4700ECB9DC /* Project object */;
 }

@@ -9,21 +9,56 @@ import UIKit
 
 class SelectedDataViewController: UIViewController {
 
+    //MARK: - Outlet Connections
+    @IBOutlet weak var staticScreenButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var selectedDataTableView: UITableView!
+    
+    //MARK: - Properties
+    let presenter = SelectedDataPresenter()
+    
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupNavigationBar()
+        setupTableView()
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - Action Connections
+    @IBAction func staticScreenButtonTapped(_ sender: UIButton) {
+        let vc = StaticScreenViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
-    */
+    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
 
+    //MARK: - Support Functions
+    func setupNavigationBar(){
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    func setupTableView() {
+        selectedDataTableView.delegate = self
+        selectedDataTableView.dataSource = self
+        selectedDataTableView.register(SelectedDataTableViewCell.nib, forCellReuseIdentifier: SelectedDataTableViewCell.identifier)
+    }
+}
+
+//MARK: - TableView Functions
+extension SelectedDataViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        presenter.selectedData.keys.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell =  selectedDataTableView.dequeueReusableCell(withIdentifier: SelectedDataTableViewCell.identifier, for: indexPath) as? SelectedDataTableViewCell else { return UITableViewCell() }
+        cell.configure(with: presenter.getKeys()[indexPath.row], and: presenter.getValues()[indexPath.row])
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        50
+    }
 }

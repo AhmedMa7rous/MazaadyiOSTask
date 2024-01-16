@@ -6,41 +6,56 @@
 //
 
 import XCTest
-@testable import MazaadyiOSTask
 
-class FormViewControllerTests: XCTestCase {
+class FormViewControllerUITests: XCTestCase {
 
-    var viewController: FormViewController!
+    var app: XCUIApplication!
 
-    override func setUp() {
-        super.setUp()
-        let nib = UINib(nibName: "FormViewController", bundle: nil)
-        viewController = nib.instantiate(withOwner: nil, options: nil).first as? FormViewController
-        viewController.loadViewIfNeeded()
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        app = XCUIApplication()
+        app.launch()
     }
 
-    func testOutletsShouldBeConnected() {
-        XCTAssertNotNil(viewController.categoriesDropDown)
-        XCTAssertNotNil(viewController.subCategoryDropDown)
-        XCTAssertNotNil(viewController.processTypeDropDown)
-        XCTAssertNotNil(viewController.brandDropDown)
-        XCTAssertNotNil(viewController.modelDropDown)
-        XCTAssertNotNil(viewController.typeDropDown)
-        XCTAssertNotNil(viewController.transmissionDropDown)
-        XCTAssertNotNil(viewController.submitButton)
-        XCTAssertNotNil(viewController.formStackView)
-        XCTAssertNotNil(viewController.DropDowns)
+    override func tearDownWithError() throws {
+        app = nil
+        try super.tearDownWithError()
     }
 
-    func testSubmitButtonTapped() {
-        // Given
-        viewController.specifyTextField.text = "TestSpecification"
+    func testSubmitButtonTapped() throws {
+        // Assuming you have accessibility identifiers set for your UI elements
+        let categoriesDropDown = app.textFields["Category"]
+        let subCategoryDropDown = app.textFields["Subcategory"]
+        let processTypeDropDown = app.textFields["Process Type"]
+        let brandDropDown = app.textFields["Brand"]
+        let modelDropDown = app.textFields["Model"]
+        let typeDropDown = app.textFields["Type"]
+        let transmissionDropDown = app.textFields["Transmission Type"]
+        let submitButton = app.buttons["Submit"]
 
-        // When
-        viewController.submitButton.sendActions(for: .touchUpInside)
+        // Interaction with UI elements
+        categoriesDropDown.tap()
+        app.tables.staticTexts["CARS , MOTORCYCLES & ACCESSORIES"].tap()
 
-        // Then
-        XCTAssertEqual(viewController.presenter.allSelectedData["Process type"], "TestSpecification")
+        subCategoryDropDown.tap()
+        app.tables.staticTexts["Cars"].tap()
+
+        processTypeDropDown.tap()
+        app.tables.staticTexts["Sell"].tap()
+
+        brandDropDown.tap()
+        app.tables.staticTexts["ACURA"].tap()
+
+        modelDropDown.tap()
+        app.tables.staticTexts["1.6EL"].tap()
+
+        transmissionDropDown.tap()
+        app.tables.staticTexts["Automatic"].tap()
+
+        submitButton.tap()
+
+        // Assert your expected results after the submit button is tapped
+        XCTAssertTrue(app.alerts["Submitted"].exists)
+        app.alerts["Submitted"].buttons["OK"].tap()
     }
-
 }

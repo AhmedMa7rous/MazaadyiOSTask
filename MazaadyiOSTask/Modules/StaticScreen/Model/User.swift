@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct User {
+    let name: String
+    let profileImageName: String
+    let isOnline: Bool
+}
